@@ -48,3 +48,35 @@ user-auth-app/<br>
 │ ├── .env<br>
 │ ├── tailwind.config.js<br>
 ├── README.md<br>
+
+### Backend Folder Structure
+
+- **models/**: Contains Mongoose models.
+  - `User.js`: User model schema definition.
+- **routes/**: Contains Express route definitions.
+  - `authRoutes.js`: Routes for authentication (register, login, profile).
+- **middleware/**: Contains middleware functions.
+  - `authMiddleware.js`: Middleware to protect routes.
+- **config/**: Contains configuration files.
+  - `db.js`: MongoDB connection configuration.
+- **.env**: Environment variables file.
+- **server.js**: Main entry point for the backend server.
+
+### Frontend Folder Structure
+
+- **src/**: Contains the source code for the frontend.
+  - **components/**: Contains React components.
+    - `Profile.js`: Protected profile component.
+    - `PrivateRoute.js`: Component that protects the children from unauthorized users.
+    - `PublicRoute.js`: Component that protects the login and register pages from logged users.
+    - `Login.js`: Login form component.
+    - `SignUp.js`: Registration form component.
+    - `EditProfile.js`: Component that allows users to edit their profile details and delete it.
+  - **context/**: Contains context providers for global state management.
+    - `AuthContext.js`: Context for authentication state.
+  - `App.js`: Main App component containing routes.
+  - `index.js`: Entry point for the React application.
+- **public/**: Contains static files.
+  - `index.html`: Main HTML file for the React application.
+- **package.json**: Lists frontend dependencies and scripts.
+- **tailwind.config.json**: Configuration file for Tailwind CSS.
