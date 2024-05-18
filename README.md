@@ -134,7 +134,7 @@ user-auth-app/<br>
    npm run start
 
 
-##Usage
+## Usage
 
 - Open your browser and navigate to 'http://localhost:3000' to view the application.
 - Use Postman or another API testing tool to interact with the backend at 'http://localhost:8080'.
