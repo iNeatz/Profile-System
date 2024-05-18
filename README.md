@@ -8,7 +8,6 @@ This is a full-stack user authentication application built with React.js for the
 - [Installation](#installation)
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
-- [License](#license)
 
 ## Folder Structure
 user-auth-app/<br>
