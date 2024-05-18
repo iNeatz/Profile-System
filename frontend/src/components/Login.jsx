@@ -24,8 +24,8 @@ const SignUp = () => {
     try {
       const url = `${process.env.REACT_APP_BASE_URL}/auth/login`;
       const { data: res } = await axios.post(url, data);
-      setToken(`Bearer ${res.data}`);
-      localStorage.setItem("token", `Bearer ${res.data}`);
+      setToken(res.data);
+      localStorage.setItem("token", res.data);
       window.location = "/";
     } catch (error) {
       if (

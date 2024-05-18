@@ -28,6 +28,9 @@ userSchema.methods.generateAuthToken = function () {
 	const token = jwt.sign(
 		{
 			_id: this._id,
+			firstName: this.firstName,
+			lastName: this.lastName,
+			email: this.email,
 		},
 		process.env.JWT_PRIVATE,
 		{ expiresIn: '7d' }

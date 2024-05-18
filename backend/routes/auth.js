@@ -83,11 +83,46 @@ router.get('/profile', authMiddleware, async (req, res) => {
 	}
 })
 
+//Update User Data
+router.put('/profile', authMiddleware, async (req, res) => {
+	try {
+		const userId = req.userId
+
+		const { error } = validateUpdate(req.body)
+
+		if (error)
+			return res.status(400).send({
+				message: error.details[0].message,
+			})
+
+		console.log(userId)
+		await User.findByIdAndUpdate(userId, { ...req.body })
+
+		res.status(200).send({
+			message: 'User Profile Updated Successfully.',
+		})
+	} catch (error) {
+		res.status(500).send({
+			message: 'Internal Server Error',
+		})
+	}
+})
+
 //Validation for Sign In Form
 const validateSignIn = (data) => {
 	const schema = Joi.object({
 		email: Joi.string().email().required().label('Email'),
 		password: Joi.string().required().label('Password'),
+	})
+	return schema.validate(data)
+}
+
+//Validation for Update Form
+const validateUpdate = (data) => {
+	const schema = Joi.object({
+		firstName: Joi.string().label('First Name'),
+		lastName: Joi.string().label('Last Name'),
+		email: Joi.string().required().label('Email'),
 	})
 	return schema.validate(data)
 }
