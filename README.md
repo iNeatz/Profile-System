@@ -101,3 +101,11 @@ user-auth-app/<br>
 
    ```sh
    npm install
+3. Create a .env file in the 'backend/' directory and add the following:
+
+   ```sh
+    PORT=8080
+    MONGODB_URI=mongodb+srv://sahilshrestha77:ashwinstha@cluster0.mpbsvos.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+    
+    JWT_PRIVATE=2de76434bf3ef72089465b91d51bbc50ceb0ea9dcfdad0880169ba5b7a2acf62
+    SALT=10
