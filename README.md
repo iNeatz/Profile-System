@@ -109,3 +109,26 @@ user-auth-app/<br>
     
     JWT_PRIVATE=2de76434bf3ef72089465b91d51bbc50ceb0ea9dcfdad0880169ba5b7a2acf62
     SALT=10
+4. Start the backend server:
+
+   ```sh
+   npm start
+
+### Frontend Installation
+
+1. Navigate to the Frontend Directory IN A NEW TERMINAL:
+
+   ```sh
+      cd frontend
+2. Install Frontend Dependencies:
+
+   ```sh
+   npm install
+3. Create a .env file in the 'frontend/' directory and add the following:
+
+   ```sh
+    REACT_APP_BASE_URL=https://profile-system.onrender.com/api
+4. Start the frontend server:
+
+   ```sh
+   npm run start
