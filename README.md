@@ -20,31 +20,31 @@ user-auth-app/<br>
 │ ├── routes/<br>
 │ │ └── auth.js<br>
 │ ├── middleware/<br>
-│ │ └── authMiddleware.js
-│ ├── .env
-│ ├── index.js
-│ ├── package.json
-│ ├── package-lock.json
-├── frontend/
-│ ├── src/
-│ │ ├── components/
-│ │ │ ├── Profile.js
-│ │ │ ├── PrivateRoute.js
-│ │ │ ├── Login.js
-│ │ │ ├── SignUp.js
-│ │ │ ├── PublicRoute.js
-│ │ │ ├── EditProfile.js
-│ │ ├── context/
-│ │ │ └── AuthContext.js
-│ │ ├── App.js
-│ │ ├── index.css
-│ │ ├── index.js
-│ ├── public/
-│ │ └── index.html
-│ ├── package.json
-│ ├── package-lock.json
-│ ├── postcss.config.js
-│ ├── .prettierrc
-│ ├── .env
-│ ├── tailwind.config.js
-├── README.md
+│ │ └── authMiddleware.js<br>
+│ ├── .env<br>
+│ ├── index.js<br>
+│ ├── package.json<br>
+│ ├── package-lock.json<br>
+├── frontend/<br>
+│ ├── src/<br>
+│ │ ├── components/<br>
+│ │ │ ├── Profile.js<br>
+│ │ │ ├── PrivateRoute.js<br>
+│ │ │ ├── Login.js<br>
+│ │ │ ├── SignUp.js<br>
+│ │ │ ├── PublicRoute.js<br>
+│ │ │ ├── EditProfile.js<br>
+│ │ ├── context/<br>
+│ │ │ └── AuthContext.js<br>
+│ │ ├── App.js<br>
+│ │ ├── index.css<br>
+│ │ ├── index.js<br>
+│ ├── public/<br>
+│ │ └── index.html<br>
+│ ├── package.json<br>
+│ ├── package-lock.json<br>
+│ ├── postcss.config.js<br>
+│ ├── .prettierrc<br>
+│ ├── .env<br>
+│ ├── tailwind.config.js<br>
+├── README.md<br>
