@@ -138,3 +138,11 @@ user-auth-app/<br>
 
 - Open your browser and navigate to 'http://localhost:3000' to view the application.
 - Use Postman or another API testing tool to interact with the backend at 'http://localhost:8080'.
+
+
+## API Endpoints
+- POST /api/auth/signup: Register a new user.
+- POST /api/auth/login: Authenticate a user and return a JWT.
+- GET /api/auth/profile: Retrieve the authenticated user's profile information.
+- PUT /api/auth/profile: Update the authenticated user's profile information.
+- DELETE /api/auth/profile: Delete the authenticated user's account.
