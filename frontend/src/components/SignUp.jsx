@@ -96,7 +96,7 @@ const SignUp = () => {
             />
 
             {error && (
-              <div className="mx-[5px] my-0 w-[370px] rounded-[5px] bg-[#f34646] p-[15px] text-center text-[14px] text-white">
+              <div className="mx-[5px] my-0 w-full rounded-[5px] bg-[#f34646] p-[15px] text-center text-[14px] text-white">
                 {error}
               </div>
             )}

@@ -96,10 +96,35 @@ router.put('/profile', authMiddleware, async (req, res) => {
 			})
 
 		console.log(userId)
-		await User.findByIdAndUpdate(userId, { ...req.body })
+		const user = await User.findByIdAndUpdate(userId, { ...req.body })
 
+		const token = user.generateAuthToken()
 		res.status(200).send({
+			data: token,
 			message: 'User Profile Updated Successfully.',
+		})
+	} catch (error) {
+		res.status(500).send({
+			message: 'Internal Server Error',
+		})
+	}
+})
+
+//Delete User
+router.delete('/profile', authMiddleware, async (req, res) => {
+	try {
+		const userId = req.userId
+
+		const user = await User.findById(userId)
+
+		if(!user) return res.status(404).send({
+			message: 'User Not Found.'
+		})
+
+		await User.findByIdAndDelete(userId)
+
+		return res.status(200).send({
+			message: 'User deleted successfully'
 		})
 	} catch (error) {
 		res.status(500).send({

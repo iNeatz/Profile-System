@@ -8,19 +8,6 @@ export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState("");
   const navigate = useNavigate();
 
-  const loginAction = async (data) => {
-    try {
-      const url = `${process.env.REACT_APP_BASE_URL}/auth/login`;
-      const { data: res } = await fetch(url, data, {
-        method: 'POST'
-      });
-      setToken(res.data);
-      localStorage.setItem("token", res.data);
-    } catch (error) {
-      
-    }
-  }
-
   const logOut = () => {
     setToken("");
     localStorage.removeItem("token");
@@ -50,7 +37,7 @@ export const AuthProvider = ({ children }) => {
 
   useEffect(() => {
     userAuthentication();
-  }, []);
+  }, [token]);
 
   return (
     <AuthContext.Provider value={{ token, setToken, logOut, user }}>
