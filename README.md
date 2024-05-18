@@ -80,3 +80,20 @@ user-auth-app/<br>
   - `index.html`: Main HTML file for the React application.
 - **package.json**: Lists frontend dependencies and scripts.
 - **tailwind.config.json**: Configuration file for Tailwind CSS.
+
+
+## Installation
+
+### Prerequisites
+
+- Node.js
+- npm
+- MongoDB
+
+### Backend Installation
+
+1. Clone the repository:
+
+   ```sh
+   git clone https://github.com/yourusername/user-auth-app.git
+   cd user-auth-app/backend
