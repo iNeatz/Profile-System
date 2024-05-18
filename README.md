@@ -95,5 +95,9 @@ user-auth-app/<br>
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/yourusername/user-auth-app.git
-   cd user-auth-app/backend
+   git clone https://github.com/iNeatz/Profile-System.git
+   cd backend
+2. Install Backend Dependencies:
+
+   ```sh
+   npm install
