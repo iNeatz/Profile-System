@@ -11,15 +11,15 @@ This is a full-stack user authentication application built with React.js for the
 - [License](#license)
 
 ## Folder Structure
-user-auth-app/
-├── backend/
-│ ├── config/
-│ │ └── db.js
-│ ├── models/
-│ │ └── User.js
-│ ├── routes/
-│ │ └── auth.js
-│ ├── middleware/
+user-auth-app/<br>
+├── backend/<br>
+│ ├── config/<br>
+│ │ └── db.js<br>
+│ ├── models/<br>
+│ │ └── User.js<br>
+│ ├── routes/<br>
+│ │ └── auth.js<br>
+│ ├── middleware/<br>
 │ │ └── authMiddleware.js
 │ ├── .env
 │ ├── index.js
